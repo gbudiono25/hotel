@@ -1,5 +1,6 @@
 /* ==========================================================================
-   THE AMARA HOTEL - DESIGN SYSTEM & STYLESHEET
+   THE AMARA HOTEL & RESORT - DESIGN SYSTEM & STYLESHEET
+   (Website Demo Khusus Hotel oleh Khania Studio)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -289,8 +290,66 @@ p:last-child {
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
 }
 
+.btn-subtext {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  margin-top: 2px;
+}
+
 /* --------------------------------------------------------------------------
-   6. NAVIGATION & HEADER
+   6. DEMO BADGE & DISCLAIMER STYLES
+   -------------------------------------------------------------------------- */
+.demo-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(197, 160, 89, 0.15);
+  border: 1px solid var(--color-accent-gold);
+  color: var(--color-accent-gold);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.demo-pill-badge-light {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #f3e8d3;
+}
+
+.demo-price-note {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.disclaimer-section {
+  background-color: #06182e;
+  color: #a0aec0;
+  padding: var(--spacing-xl) 0;
+  border-top: 1px solid rgba(197, 160, 89, 0.3);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.disclaimer-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--color-accent-gold);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. NAVIGATION & HEADER
    -------------------------------------------------------------------------- */
 .site-header {
   position: sticky;
@@ -334,8 +393,8 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .brand-logo {
@@ -353,16 +412,16 @@ p:last-child {
 
 .brand-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--color-text-light);
   text-transform: uppercase;
 }
 
 .brand-tagline {
   font-size: 0.65rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   color: var(--color-accent-gold);
   text-transform: uppercase;
   display: block;
@@ -372,11 +431,11 @@ p:last-child {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -411,7 +470,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   7. HERO SECTION (REFERENCE STYLED FRAMED LUXURY HERO)
+   8. HERO SECTION
    -------------------------------------------------------------------------- */
 .hero {
   position: relative;
@@ -444,9 +503,9 @@ p:last-child {
 
 .hero-subtitle {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--color-accent-gold);
   margin-bottom: var(--spacing-md);
@@ -455,7 +514,7 @@ p:last-child {
 .hero-title {
   color: var(--color-text-light);
   margin-bottom: var(--spacing-lg);
-  font-size: clamp(2.5rem, 5vw + 1rem, 4.2rem);
+  font-size: clamp(2.3rem, 5vw + 1rem, 4rem);
   line-height: 1.15;
   font-weight: 600;
 }
@@ -501,7 +560,7 @@ p:last-child {
   margin: 0 auto;
 }
 
-/* Framed Decorative Card (Inspired by Screenshot) */
+/* Framed Decorative Card */
 .framed-card {
   background: var(--color-bg-surface);
   border: 1px solid var(--color-border-gold);
@@ -526,7 +585,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   8. FEATURE CARDS & GRIDS
+   9. FEATURE CARDS & GRIDS
    -------------------------------------------------------------------------- */
 .grid-3 {
   display: grid;
@@ -674,7 +733,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   9. UNIQUE SECTION 1: COMPARISON TABLE
+   10. COMPARISON TABLE
    -------------------------------------------------------------------------- */
 .comparison-wrapper {
   overflow-x: auto;
@@ -723,7 +782,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   10. UNIQUE SECTION 2: STATS & HIGHLIGHTS GRID
+   11. STATS & HIGHLIGHTS GRID
    -------------------------------------------------------------------------- */
 .stats-grid {
   display: grid;
@@ -764,7 +823,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   11. UNIQUE SECTION 3: PROCESS TIMELINE
+   12. PROCESS TIMELINE
    -------------------------------------------------------------------------- */
 .timeline {
   position: relative;
@@ -840,7 +899,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   12. UNIQUE SECTION 4: CSS-ONLY FAQ ACCORDION
+   13. CSS-ONLY FAQ ACCORDION
    -------------------------------------------------------------------------- */
 .faq-accordion {
   max-width: 800px;
@@ -901,7 +960,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   13. FORM STYLES (CONTACT & RESERVATION)
+   14. FORM STYLES
    -------------------------------------------------------------------------- */
 .contact-grid {
   display: grid;
@@ -979,7 +1038,7 @@ textarea.form-control {
 }
 
 /* --------------------------------------------------------------------------
-   14. PORTFOLIO & GALLERY GRID
+   15. PORTFOLIO & GALLERY GRID
    -------------------------------------------------------------------------- */
 .gallery-grid {
   display: grid;
@@ -1099,7 +1158,7 @@ textarea.form-control {
 }
 
 /* --------------------------------------------------------------------------
-   15. FOOTER STYLES
+   16. FOOTER STYLES
    -------------------------------------------------------------------------- */
 .site-footer {
   background-color: var(--color-primary-dark);
@@ -1194,7 +1253,7 @@ textarea.form-control {
 }
 
 /* --------------------------------------------------------------------------
-   16. RESPONSIVE BREAKPOINTS (MOBILE-FIRST ADAPTATIONS)
+   17. RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
 @media (max-width: 992px) {
   .contact-grid {
