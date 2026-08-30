@@ -470,7 +470,7 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   8. HERO SECTION
+   8. HERO SECTION - PREMIUM CITY HOTEL EXTERIOR VISUAL
    -------------------------------------------------------------------------- */
 .hero {
   position: relative;
@@ -479,7 +479,7 @@ p:last-child {
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary-dark);
-  background-image: linear-gradient(to bottom, rgba(10, 35, 66, 0.65), rgba(10, 35, 66, 0.85)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80');
+  background-image: linear-gradient(to bottom, rgba(10, 35, 66, 0.70), rgba(10, 35, 66, 0.88)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
   color: var(--color-text-light);
@@ -538,7 +538,7 @@ p:last-child {
 /* Page Header Sub-Hero */
 .page-hero {
   background-color: var(--color-primary);
-  background-image: linear-gradient(to bottom, rgba(10, 35, 66, 0.8), rgba(10, 35, 66, 0.95)), url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1920&q=80');
+  background-image: linear-gradient(to bottom, rgba(10, 35, 66, 0.82), rgba(10, 35, 66, 0.95)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
   color: var(--color-text-light);
