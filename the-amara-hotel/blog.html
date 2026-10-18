@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261018">
 
   <script type="application/ld+json">
   {
@@ -58,7 +58,7 @@
   <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
+      <a href="index.html" class="brand-logo" aria-label="The Amara Hotel Home">
         <svg class="brand-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
         </svg>
@@ -68,7 +68,11 @@
         </div>
       </a>
 
-      <nav class="nav-links">
+      <button type="button" class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Buka Menu Navigasi">
+        <span class="hamburger-icon" aria-hidden="true">&#9776;</span>
+      </button>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Navigasi Utama">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
@@ -242,5 +246,46 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var toggleBtn = document.querySelector('.mobile-menu-toggle');
+      var navMenu = document.getElementById('primary-nav');
+      if (!toggleBtn || !navMenu) return;
+      var iconEl = toggleBtn.querySelector('.hamburger-icon');
+
+      function setMenuState(isOpen) {
+        navMenu.classList.toggle('is-open', isOpen);
+        toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        toggleBtn.setAttribute('aria-label', isOpen ? 'Tutup Menu Navigasi' : 'Buka Menu Navigasi');
+        if (iconEl) {
+          iconEl.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+        }
+      }
+
+      toggleBtn.addEventListener('click', function () {
+        var isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
+        setMenuState(!isOpen);
+      });
+
+      var links = navMenu.querySelectorAll('.nav-link');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function () {
+          setMenuState(false);
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          setMenuState(false);
+        }
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.site-header')) {
+          setMenuState(false);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

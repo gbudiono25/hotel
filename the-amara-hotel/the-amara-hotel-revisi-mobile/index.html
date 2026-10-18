@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Amara Hotel | Website Demo Hotel</title>
+  <meta name="description" content="Website demo hotel premium yang dibuat oleh Khania Studio sebagai contoh website profesional untuk bisnis hotel dan hospitality.">
+  <meta name="keywords" content="website demo hotel, khania studio, hotel premium jakarta, hotel terpercaya di jakarta, mangga besar jakarta">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theamarahotel-demo.com/">
+  <meta property="og:title" content="The Amara Hotel | Website Demo Hotel">
+  <meta property="og:description" content="Website demo hotel premium yang dibuat oleh Khania Studio sebagai contoh website profesional untuk bisnis hotel dan hospitality.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Amara Hotel | Website Demo Hotel">
+  <meta name="twitter:description" content="Website demo hotel premium yang dibuat oleh Khania Studio sebagai contoh website profesional untuk bisnis hotel dan hospitality.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon Emoji SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏰</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=20261018">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "The Amara Hotel (Website Demo)",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+    "description": "Website demo hotel premium yang dibuat oleh Khania Studio sebagai contoh website profesional untuk bisnis hotel dan hospitality.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mangga Besar",
+      "addressRegion": "DKI Jakarta",
+      "addressCountry": "ID"
+    },
+    "telephone": "08XX-XXXX-XXXX",
+    "email": "hello@theamarahotel-demo.com"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Mangga Besar, Jakarta</span>
+        </div>
+        <div class="top-bar-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>Admin: 08XX-XXXX-XXXX (Demo)</span>
+        </div>
+      </div>
+      <div class="top-bar-info">
+        <div class="demo-pill-badge demo-pill-badge-light">
+          ✨ WEBSITE DEMO KHUSUS HOTEL | DIBUAT OLEH KHANIA STUDIO
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="The Amara Hotel Home">
+        <svg class="brand-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+        </svg>
+        <div>
+          <span class="brand-title">The Amara</span>
+          <span class="brand-tagline">Hotel</span>
+        </div>
+      </a>
+
+      <button type="button" class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Buka Menu Navigasi">
+        <span class="hamburger-icon" aria-hidden="true">&#9776;</span>
+      </button>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Navigasi Utama">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-whatsapp">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <div>
+            <span>Reservasi via WhatsApp</span>
+            <span class="btn-subtext">Nomor WhatsApp Fiktif — Demo</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <svg class="hero-crest" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 3L4 9V21H20V9L12 3Z" />
+          <path d="M9 21V12H15V21" />
+        </svg>
+        <span class="hero-subtitle">PENGALAMAN MENGINAP PREMIUM DI JAKARTA</span>
+        <h1 class="hero-title">Kemewahan & Kenyamanan untuk Setiap Momen</h1>
+        <p class="hero-description">
+          The Amara Hotel menghadirkan pengalaman menginap yang nyaman dengan desain elegan, pelayanan hangat, serta berbagai fasilitas untuk kebutuhan bisnis, keluarga, maupun acara khusus.
+        </p>
+        <div class="hero-cta-group">
+          <a href="contact.html" class="btn btn-gold">
+            <div>
+              <span>Reservasi via WhatsApp</span>
+              <span class="btn-subtext" style="color: #fff;">Nomor WhatsApp Fiktif — Demo</span>
+            </div>
+          </a>
+          <a href="services.html" class="btn btn-outline-light">Lihat Layanan Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction & Framed Luxury Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <span class="text-uppercase text-gold">Tentang The Amara Hotel</span>
+          <h2 style="margin-top: 8px; margin-bottom: 20px;">Pilihan Hotel Nyaman & Terpercaya di Jakarta</h2>
+          <p>
+            The Amara Hotel menghadirkan akomodasi premium yang menggabungkan estetika modern, kehangatan pelayanan Indonesia, dan kenyamanan tertinggi. Berada di kawasan Mangga Besar, Jakarta dengan akses mudah untuk kebutuhan bisnis maupun liburan keluarga.
+          </p>
+          <p>
+            Setiap kamar dirancang dengan ketelitian detail, perlengkapan tempat tidur berkualitas tinggi, serta suasana tenang yang menenangkan bagi para wisatawan lokal maupun mancanegara.
+          </p>
+          <div style="margin-top: 24px;">
+            <a href="about.html" class="btn btn-primary">Pelajari Selengkapnya</a>
+          </div>
+        </div>
+
+        <div class="framed-card">
+          <div class="framed-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Interior Kamar Mewah The Amara Hotel" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accommodations Grid -->
+  <section class="section section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <svg class="crest-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 21h18M3 7v14M21 7v14M6 7V4a1 1 0 011-1h10a1 1 0 011 1v3M9 11h6M9 15h6" />
+        </svg>
+        <span class="subtitle">Akomodasi Pilihan</span>
+        <h2>Kamar & Suite Tertata Mewah</h2>
+        <div class="title-divider"></div>
+      </div>
+
+      <div class="grid-3">
+        <!-- Room 1 -->
+        <article class="room-card">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Deluxe Premium Room" loading="lazy">
+            <span class="room-badge">Terpopuler</span>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Deluxe Premium Room</h3>
+            <div class="room-card-specs">
+              <span>📐 42 m²</span>
+              <span>🛏️ King Bed</span>
+              <span>🏙️ City View</span>
+            </div>
+            <p>Kamar nyaman dengan desain modern, area istirahat yang luas, serta fasilitas yang dirancang untuk memberikan pengalaman menginap yang menyenangkan.</p>
+            <div class="room-card-footer">
+              <div>
+                <div class="room-price">Rp 850.000 <span>/ malam</span></div>
+                <span class="demo-price-note">*Harga contoh untuk kebutuhan demo website.</span>
+              </div>
+              <a href="contact.html" class="btn btn-outline-gold">Reservasi Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2 -->
+        <article class="room-card">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=80" alt="Executive Business Suite" loading="lazy">
+            <span class="room-badge">Executive</span>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Executive Suite</h3>
+            <div class="room-card-specs">
+              <span>📐 65 m²</span>
+              <span>🛋️ Living Room</span>
+              <span>🏙️ City View</span>
+            </div>
+            <p>Suite elegan dengan ruang tamu terpisah, ideal bagi pebisnis dan tamu yang menginginkan kenyamanan ekstra.</p>
+            <div class="room-card-footer">
+              <div>
+                <div class="room-price">Rp 1.450.000 <span>/ malam</span></div>
+                <span class="demo-price-note">*Harga contoh untuk kebutuhan demo website.</span>
+              </div>
+              <a href="contact.html" class="btn btn-outline-gold">Reservasi Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 3 -->
+        <article class="room-card">
+          <div class="room-card-image">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=600&q=80" alt="Amara Royal Suite" loading="lazy">
+            <span class="room-badge">Luxury</span>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-title">Amara Royal Suite</h3>
+            <div class="room-card-specs">
+              <span>📐 110 m²</span>
+              <span>🍷 Dining Area</span>
+              <span>🛁 Marble Bath</span>
+            </div>
+            <p>Kemewahan tertinggi dengan jacuzzi pribadi, meja makan, dan layanan butler 24 jam.</p>
+            <div class="room-card-footer">
+              <div>
+                <div class="room-price">Rp 2.800.000 <span>/ malam</span></div>
+                <span class="demo-price-note">*Harga contoh untuk kebutuhan demo website.</span>
+              </div>
+              <a href="contact.html" class="btn btn-outline-gold">Reservasi Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Fasilitas & Pengalaman Menginap (Single Column Table) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Keunggulan Layanan</span>
+        <h2>Fasilitas & Pengalaman Menginap</h2>
+        <p style="margin-top: 10px;">Berbagai fasilitas yang dirancang untuk memberikan pengalaman menginap yang nyaman dan berkesan.</p>
+        <div class="title-divider"></div>
+      </div>
+
+      <div class="comparison-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Fasilitas</th>
+              <th class="highlight">The Amara Hotel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kamar & Suite</td>
+              <td class="highlight">✓ Pilihan kamar dan suite dengan konsep modern</td>
+            </tr>
+            <tr>
+              <td>Restoran</td>
+              <td class="highlight">✓ Restoran Nusantara</td>
+            </tr>
+            <tr>
+              <td>Ballroom</td>
+              <td class="highlight">✓ Kapasitas hingga 700 tamu</td>
+            </tr>
+            <tr>
+              <td>Spa & Wellness</td>
+              <td class="highlight">✓ Fasilitas relaksasi dan perawatan</td>
+            </tr>
+            <tr>
+              <td>Kolam Renang</td>
+              <td class="highlight">✓ Kolam renang outdoor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Key Stats Grid -->
+  <section class="section section-bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Angka Utama</span>
+        <h2>Standardisasi & Keunggulan Kami</h2>
+        <div class="title-divider"></div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">KAMAR & SUITE</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">700</div>
+          <div class="stat-label">KAPASITAS BALLROOM</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">LOKASI STRATEGIS</div>
+          <div class="stat-label">MANGGA BESAR, JAKARTA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">LAYANAN KAMAR & CONCIERGE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Teaser -->
+  <section class="section section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Fasilitas Berkelas</span>
+        <h2>Pengalaman Terbaik Dalam Satu Tempat</h2>
+        <div class="title-divider"></div>
+      </div>
+
+      <div class="grid-4">
+        <div class="feature-box">
+          <svg class="feature-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+          </svg>
+          <h3>Restoran Nusantara</h3>
+          <p>Sajikan cita rasa nusantara kaya rempah yang dipadukan dengan standar kuliner modern.</p>
+        </div>
+
+        <div class="feature-box">
+          <svg class="feature-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1" />
+          </svg>
+          <h3>Ruang Rapat & Ballroom</h3>
+          <p>Fasilitas MICE yang mampu menampung hingga 700 tamu untuk berbagai acara bisnis, keluarga, maupun perayaan.</p>
+        </div>
+
+        <div class="feature-box">
+          <svg class="feature-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 3" />
+          </svg>
+          <h3>Spa & Wellness</h3>
+          <p>Relaksasi tubuh dan pikiran dengan perawatan pijat tradisional dan mandi aroma terapi.</p>
+        </div>
+
+        <div class="feature-box">
+          <svg class="feature-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 15a4 4 0 004 4h10a4 4 0 004-4M3 9a4 4 0 014-4h10a4 4 0 014 4" />
+          </svg>
+          <h3>Kolam Renang Outdoor</h3>
+          <p>Kolam renang outdoor yang nyaman untuk bersantai bersama keluarga maupun menikmati waktu luang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="section" style="background: var(--color-primary); color: #fff; text-align: center;">
+    <div class="container">
+      <h2 style="color: #fff; margin-bottom: 16px;">Ingin Melihat Contoh Fitur Website Hotel Seperti Ini?</h2>
+      <p style="color: #c0cbdb; max-width: 680px; margin: 0 auto 32px auto;">
+        Website ini merupakan contoh tampilan demo profesional dari Khania Studio. Hubungi kami untuk konsultasi pembuatan website hotel atau bisnis Anda.
+      </p>
+      <a href="contact.html" class="btn btn-whatsapp" style="font-size: 1.1rem; padding: 16px 36px;">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        <div>
+          <span>Reservasi via WhatsApp (Kontak Demo)</span>
+          <span class="btn-subtext" style="color: #fff;">Nomor WhatsApp Fiktif — Demo</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Disclaimer Section -->
+  <section class="disclaimer-section">
+    <div class="container">
+      <div class="disclaimer-box">
+        <strong>Catatan:</strong> Seluruh informasi yang terdapat dalam website ini—termasuk nama hotel, nama kamar, fasilitas, harga, alamat, kontak, dan informasi lainnya—merupakan informasi fiktif yang dibuat khusus untuk kebutuhan demo dan portofolio Khania Studio. Jika terdapat kesamaan dengan nama, tempat, bisnis, atau informasi pihak lain, hal tersebut semata-mata merupakan kebetulan.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <div>
+              <span class="brand-title" style="color: #fff;">The Amara</span>
+              <span class="brand-tagline">Hotel</span>
+            </div>
+          </a>
+          <p style="margin-top: 12px; font-weight: 600; color: var(--color-accent-gold);">
+            Website Demo Hotel<br>Dibuat oleh Khania Studio
+          </p>
+          <p>
+            Contoh website hotel profesional yang menghadirkan kenyamanan kamar mewah, kuliner nusantara, spa, dan ballroom.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigasi Utama</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Layanan & Fasilitas</a></li>
+            <li><a href="portfolio.html" class="footer-link">Galeri & Portofolio</a></li>
+            <li><a href="blog.html" class="footer-link">Berita & Artikel</a></li>
+            <li><a href="contact.html" class="footer-link">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Layanan Hotel</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Kamar & Suite</a></li>
+            <li><a href="services.html" class="footer-link">Ruang Rapat & Ballroom</a></li>
+            <li><a href="services.html" class="footer-link">Restoran Nusantara</a></li>
+            <li><a href="services.html" class="footer-link">Spa & Wellness</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Kontak Hotel</h4>
+          <p style="font-size: 0.9rem; color: #a0aec0; margin-bottom: 12px;">
+            <strong>Kontak:</strong> Admin The Amara Hotel<br>
+            <strong>WhatsApp Hotel:</strong> 08XX-XXXX-XXXX<br>
+            <strong>Email Hotel:</strong> hello@theamarahotel-demo.com<br>
+            <strong>Instagram:</strong> @theamarahotel.demo<br>
+            <strong>Lokasi Hotel:</strong> Mangga Besar, Jakarta
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Amara Hotel. Website Demo Dibuat oleh Khania Studio.</p>
+        <p>Professional Hotel Portfolio Concept</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggleBtn = document.querySelector('.mobile-menu-toggle');
+      var navMenu = document.getElementById('primary-nav');
+      if (!toggleBtn || !navMenu) return;
+      var iconEl = toggleBtn.querySelector('.hamburger-icon');
+
+      function setMenuState(isOpen) {
+        navMenu.classList.toggle('is-open', isOpen);
+        toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        toggleBtn.setAttribute('aria-label', isOpen ? 'Tutup Menu Navigasi' : 'Buka Menu Navigasi');
+        if (iconEl) {
+          iconEl.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+        }
+      }
+
+      toggleBtn.addEventListener('click', function () {
+        var isOpen = toggleBtn.getAttribute('aria-expanded') === 'true';
+        setMenuState(!isOpen);
+      });
+
+      var links = navMenu.querySelectorAll('.nav-link');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function () {
+          setMenuState(false);
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          setMenuState(false);
+        }
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.site-header')) {
+          setMenuState(false);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

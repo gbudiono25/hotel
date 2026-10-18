@@ -469,6 +469,10 @@ p:last-child {
   gap: 16px;
 }
 
+.mobile-menu-toggle {
+  display: none;
+}
+
 /* --------------------------------------------------------------------------
    8. HERO SECTION - PREMIUM CITY HOTEL EXTERIOR VISUAL
    -------------------------------------------------------------------------- */
@@ -1264,15 +1268,135 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .top-bar {
+    padding: 6px 0;
+    font-size: 0.75rem;
+  }
+
+  .top-bar-content {
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .top-bar-info {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .demo-pill-badge {
+    font-size: 0.68rem;
+    padding: 3px 10px;
+  }
+
   .nav-container {
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
+  .brand-logo {
+    order: 1;
+    gap: 10px;
+  }
+
+  .brand-logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-title {
+    font-size: 1.25rem;
+  }
+
+  .mobile-menu-toggle {
+    order: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-accent-gold);
+    border: 1px solid rgba(197, 160, 89, 0.6);
+    border-radius: var(--radius-sm);
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition-fast);
+  }
+
+  .mobile-menu-toggle:hover,
+  .mobile-menu-toggle[aria-expanded="true"] {
+    background-color: var(--color-accent-gold);
+    color: var(--color-primary-dark);
+    border-color: var(--color-accent-gold);
   }
 
   .nav-links {
-    flex-wrap: wrap;
+    order: 3;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+    background-color: var(--color-primary-dark);
+    border: 1px solid rgba(197, 160, 89, 0.35);
+    border-radius: var(--radius-sm);
+    padding: 6px 0;
+    margin-top: 2px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    color: var(--color-accent-gold);
+    background-color: rgba(197, 160, 89, 0.1);
+    border-left: 3px solid var(--color-accent-gold);
+    padding-left: 15px;
+  }
+
+  .nav-actions {
+    order: 4;
+    width: 100%;
     justify-content: center;
-    gap: 16px;
+  }
+
+  .nav-actions .btn-whatsapp {
+    width: 100%;
+    padding: 9px 16px;
+    font-size: 0.85rem;
+    gap: 10px;
+  }
+
+  .nav-actions .btn-subtext {
+    font-size: 0.68rem;
+    margin-top: 1px;
   }
 
   .timeline::before {
